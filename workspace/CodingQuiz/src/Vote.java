@@ -37,8 +37,6 @@ public class Vote {
 		Iterator<String> iterator = vote.keySet().iterator();
 		while(iterator.hasNext()) {
 			String key = (String)iterator.next();
-			//System.out.print(key);
-			//System.out.println(" : " + vote.get(key) + "ǥ");
 			
 			if(vote.get(key) >= max)
 			{
@@ -61,10 +59,7 @@ public class Vote {
 		for(int i=0;i<maxName.length;i++) {
 			if(maxName[i] != null) {
 			System.out.print(maxName[i]);
-			System.out.println(" : " + vote.get(maxName[i]) + "ǥ");
 			}
 		}
-		
 	}
-
 }
